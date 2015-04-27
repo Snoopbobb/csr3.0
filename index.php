@@ -1,6 +1,4 @@
 <?php 
-	error_reporting(E_ERROR | E_PARSE);
-
 	//RSS Feeds
 	$xml_broncos=simplexml_load_file('https://www.bing.com/news/search?q=denver+broncos&go=Submit&qs=n&form=QBNT&pq=denver+broncos&sc=8-13&sp=-1&sk=&ghc=1&format=RSS') or die("Error: Please try again later");
 
