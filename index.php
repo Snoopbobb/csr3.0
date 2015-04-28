@@ -24,6 +24,7 @@
 
 	$xml_outdoors = simplexml_load_file('https://www.bing.com/news/search?q=colorado+parks+and+wildlife&go=Submit&qs=AS&form=QBNT&pq=colorado+park&sc=8-13&sp=1&sk=&ghc=1&format=RSS') or die ("Error: Please try again later");
 
+	// Function to iterate over xml data pulling out the link and title to the article
 	function newsTemplate ($xml) {
 		for ($i=0; $i < 10; $i++) { 
 			$title = $xml->channel->item[$i]->title;
