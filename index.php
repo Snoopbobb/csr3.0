@@ -23,6 +23,14 @@
 	$xml_general = simplexml_load_file('https://www.bing.com/news/search?q=colorado+sports&go=Submit&qs=n&form=QBNT&pq=colorado+sports&sc=8-15&sp=-1&sk=&format=RSS') or die ("Error: Please try again later");
 
 	$xml_outdoors = simplexml_load_file('https://www.bing.com/news/search?q=colorado+parks+and+wildlife&go=Submit&qs=AS&form=QBNT&pq=colorado+park&sc=8-13&sp=1&sk=&ghc=1&format=RSS') or die ("Error: Please try again later");
+
+	function newsTemplate ($xml) {
+		for ($i=0; $i < 10; $i++) { 
+			$title = $xml->channel->item[$i]->title;
+			$link = $xml->channel->item[$i]->link;
+			echo "<p><a href=\"$link\" target=\"_blank\">" . htmlentities($title) . "</a></p>";
+		 }
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,61 +60,37 @@
 		<div class="broncos-news">
 			<h1>Denver Broncos News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$broncos_title = $xml_broncos->channel->item[$i]->title;
-					$broncos_link = $xml_broncos->channel->item[$i]->link;
-					echo "<p><a href=\"$broncos_link\" target=\"_blank\">" . htmlentities($broncos_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_broncos);
 			?>
 		</div>
 		<div class="rockies-news">
 			<h1>Colorado Rockies News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$rockies_title = $xml_rockies->channel->item[$i]->title;
-					$rockies_link = $xml_rockies->channel->item[$i]->link;
-					echo "<p><a href=\"$rockies_link\" target=\"_blank\">" . htmlentities($rockies_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_rockies);
 			?>
 		</div>
 		<div class="nuggets-news">
 			<h1>Denver Nuggets News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$nuggets_title = $xml_nuggets->channel->item[$i]->title;
-					$nuggets_link = $xml_nuggets->channel->item[$i]->link;
-					echo "<p><a href=\"$nuggets_link\" target=\"_blank\">" . htmlentities($nuggets_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_nuggets);
 			?>
 		</div>
 		<div class="avs-news">
 			<h1>Colorado Avalanche News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$avs_title = $xml_avs->channel->item[$i]->title;
-					$avs_link = $xml_avs->channel->item[$i]->link;
-					echo "<p><a href=\"$avs_link\" target=\"_blank\">" . htmlentities($avs_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_avs);
 			?>
 		</div>
 		<div class="buffs-news">
 			<h1>CU Buffaloes News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$buffs_title = $xml_buffs->channel->item[$i]->title;
-					$buffs_link = $xml_buffs->channel->item[$i]->link;
-					echo "<p><a href=\"$buffs_link\" target=\"_blank\">" . htmlentities($buffs_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_buffs);
 			?>
 		</div>
 		<div class="rams-news">
 			<h1>CSU Rams News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$rams_title = $xml_rams->channel->item[$i]->title;
-					$rams_link = $xml_rams->channel->item[$i]->link;
-					echo "<p><a href=\"$rams_link\" target=\"_blank\">" . htmlentities($rams_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_rams);
 			?>
 		</div>
 		<div class="pics">
@@ -166,61 +150,37 @@
 		<div class="falcons-news">
 			<h1>AF Falcons News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$falcons_title = $xml_falcons->channel->item[$i]->title;
-					$falcons_link = $xml_falcons->channel->item[$i]->link;
-					echo "<p><a href=\"$falcons_link\" target=\"_blank\">" . htmlentities($falcons_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_falcons);
 			?>
 		</div>
 		<div class="rapids-news">
 			<h1>Colorado Rapids News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$rapids_title = $xml_rapids->channel->item[$i]->title;
-					$rapids_link = $xml_rapids->channel->item[$i]->link;
-					echo "<p><a href=\"$rapids_link\" target=\"_blank\">" . htmlentities($rapids_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_rapids);
 			?>
 		</div>
 		<div class="college-news">
 			<h1>Colorado Collegiate News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$college_title = $xml_collegiate->channel->item[$i]->title;
-					$college_link = $xml_collegiate->channel->item[$i]->link;
-					echo "<p><a href=\"$college_link\" target=\"_blank\">" . htmlentities($college_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_collegiate);
 			?>
 		</div>
 		<div class="highschool-news">
 			<h1>Colorado High School News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$highschool_title = $xml_highschool->channel->item[$i]->title;
-					$highschool_link = $xml_highschool->channel->item[$i]->link;
-					echo "<p><a href=\"$highschool_link\" target=\"_blank\">" . htmlentities($highschool_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_highschool);
 			?>
 		</div>
 		<div class="general-news">
 			<h1>Colorado Misc News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$general_title = $xml_general->channel->item[$i]->title;
-					$general_link = $xml_general->channel->item[$i]->link;
-					echo "<p><a href=\"$general_link\" target=\"_blank\">" . htmlentities($general_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_general);
 			?>
 		</div>
 		<div class="outdoors-news">
 			<h1>Colorado Outdoors News</h1>
 			<?php
-				for ($i=0; $i < 10; $i++) { 
-					$outdoors_title = $xml_outdoors->channel->item[$i]->title;
-					$outdoors_link = $xml_outdoors->channel->item[$i]->link;
-					echo "<p><a href=\"$outdoors_link\" target=\"_blank\">" . htmlentities($outdoors_title) . "</a></p>";
-		 		}
+				newsTemplate($xml_outdoors);
 			?>
 		</div>
 		<div class="pics">
