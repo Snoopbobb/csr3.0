@@ -5,13 +5,82 @@ body, html, h1, h2, h3 {
 	border-sizing: box-border;
 	font-weight: bolder;
 }
-@media only screen and (max-width: 320px) {
-
-		h1 { 
-			font-size: 2em; 
-		}
-
+/****************************
+******Full Screen CSS *******
+****************************/
+@media (min-width: 821px) {
+	.news-section {
+		width: 350px;
+		height: 850px;
+		font-size: 1.1em;
+		float: left;
+		padding: 10px;
+		min-height: 770px;
+	}
+	.button {
+		display: none;
+	}
+	.links-left {
+		width: 30%;
+		float: left;
+		margin: 10px;
+	}
+	.links-center {
+		width: 30%;
+		float: left;
+		margin: 10px;
+	}
+	.links-right {
+		width: 30%;
+		float: left;
+		margin: 10px;
+	}
+	.pics {
+		float: left;
+		height: 350px;
+		width: 350px;
+	}
 }
+/****************************
+******Tablet Screen CSS *******
+****************************/
+@media (max-width : 820px) {
+	.news-section {
+		width: 100%;
+		font-size: 2em;
+		float: none;
+		padding: 10px;
+		overflow: auto;
+	}
+	.button {
+		width: 103.5%;
+		height: 100px;
+		font-size: 2em;
+		background-color: gray;
+		color: white;
+	}
+	.links-left, .links-center, .links-right {
+		width: 100%;
+		float: none;
+		font-size: 2em;
+		margin: 10px;
+	}
+	.pics {
+		display: none;
+	}
+}
+/****************************
+******Phone Screen CSS *******
+****************************/
+/*@media (max-width : 480px) {
+	.news-section {
+		width: 100%;
+		font-size: 3em;
+		float: none;
+		padding: 10px;
+		overflow: auto;
+	}
+}*/
 body, html {
 	width: 100%;
 	background-color: black;
@@ -43,137 +112,84 @@ main {
 }
 .broncos-news {
 	background-color: #FB4F14;
-	width: 350px;
 	color: #002D62;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .broncos-news a {
 	color: #002D62;
 }
 .rockies-news {
 	background-color: purple;
-	width: 350px;
 	color: #C0C0C0;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .rockies-news a {
 	color: #C0C0C0;
 }
 .nuggets-news {
 	background-color: #4B90CD;
-	width: 350px;
 	color: #FCF800;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .nuggets-news a {
 	color: #FCF800;
 }
 .avs-news {
 	background-color: #8B2942;
-	width: 350px;
 	color: #A9B0B8;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .avs-news a {
 	color: #A9B0B8;
 }
 .buffs-news {
 	background-color: gold;
-	width: 350px;
 	color: black;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .buffs-news a {
 	color: black;
 }
 .rams-news {
 	background-color: green;
-	width: 350px;
 	color: gold;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .rams-news a {
 	color: gold;
 }
-.pics {
-	float: left;
-	height: 400px;
-	width: 32%;
-}
 .falcons-news {
 	background-color: darkblue;
-	width: 350px;
 	color: silver;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .falcons-news a {
 	color: silver;
 }
 .rapids-news {
 	background-color: #91022D;
-	width: 350px;
 	color: #85B7EA;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .rapids-news a {
 	color: #85B7EA;
 }
 .college-news {
 	background-color: red;
-	width: 350px;
 	color: blue;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .college-news a {
 	color: blue;
 }
 .highschool-news {
 	background-color: #eaeaea;
-	width: 350px;
 	color: red;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .highschool-news a {
 	color: red;
 }
 .general-news {
 	background-color: darkblue;
-	width: 350px;
 	color: darkgray;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .general-news a {
 	color: darkgray;
 }
 .outdoors-news {
 	background-color: lightgreen;
-	width: 350px;
 	color: darkgreen;
-	float: left;
-	padding: 10px;
-	min-height: 725px;
 }
 .outdoors-news a {
 	color: darkgreen;
@@ -184,21 +200,6 @@ main {
 	width: 93%;
 	float: left;
 	padding: 20px;
-}
-.links-left {
-	width: 30%;
-	float: left;
-	margin: 10px;
-}
-.links-center {
-	width: 30%;
-	float: left;
-	margin: 10px;
-}
-.links-right {
-	width: 30%;
-	float: left;
-	margin: 10px;
 }
 footer {
 	background-color: black;

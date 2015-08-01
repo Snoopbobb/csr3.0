@@ -1,4 +1,6 @@
 <?php 
+	error_reporting(0);
+
 	//RSS Feeds
 	$xml_broncos=simplexml_load_file('https://www.bing.com/news/search?q=denver+broncos&go=Submit&qs=n&form=QBNT&pq=denver+broncos&sc=8-13&sp=-1&sk=&ghc=1&format=RSS') or die("Error: Please try again later");
 
@@ -14,7 +16,7 @@
 
 	$xml_falcons = simplexml_load_file('https://www.bing.com/news/search?q=air+force+falcons+sports+&go=Submit&qs=n&form=QBNT&pq=air+force+falcons+sports+&sc=2-25&sp=-1&sk=&format=RSS') or die("Error: Please try again later");
 
-	$xml_rapids = simplexml_load_file('http://www.coloradorapids.com/rss/en.xml') or die("Error: Please try again later");
+	$xml_rapids = simplexml_load_file('https://www.bing.com/news/search?q=colorado+rapids&go=Submit&qs=n&form=QBNT&pq=colorado+rapids&sc=8-13&sp=-1&sk=&ghc=1&format=RSS') or die("Error: Please try again later");
 
 	$xml_collegiate = simplexml_load_file('https://www.bing.com/news/search?q=college+sports+colorado&go=Submit&qs=n&form=QBNT&pq=college+sports+colorado&sc=0-21&sp=-1&sk=&format=RSS') or die("Error: Please try again later");
 
@@ -37,9 +39,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Colorado Sports Report</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css">
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<div class="hero">
@@ -58,37 +62,50 @@
 		</script>
 	</aside>
 	<main>
-		<div class="broncos-news">
+		<a href="#broncos"><button class="button">Broncos News</button></a>
+		<a href="#rockies"><button class="button">Rockies News</button></a>
+		<a href="#nuggets"><button class="button">Nuggets News</button></a>
+		<a href="#avs"><button class="button">Avalanche News</button></a>
+		<a href="#buffs"><button class="button">Buffs News</button></a>
+		<a href="#rams"><button class="button">Rams News</button></a>
+		<a href="#falcons"><button class="button">Falcons News</button></a>
+		<a href="#rapids"><button class="button">Rapids News</button></a>
+		<a href="#college"><button class="button">Collegiate News</button></a>
+		<a href="#highschool"><button class="button">High School News</button></a>
+		<a href="#misc"><button class="button">Miscellaneous News</button></a>
+		<a href="#outdoors"><button class="button">Outdoors News</button></a>
+		<a href="#links"><button class="button">News Links</button></a>
+		<div class="news-section broncos-news" id="broncos">
 			<h1>Denver Broncos News</h1>
 			<?php
 				newsTemplate($xml_broncos);
 			?>
 		</div>
-		<div class="rockies-news">
+		<div class="news-section rockies-news" id="rockies">
 			<h1>Colorado Rockies News</h1>
 			<?php
 				newsTemplate($xml_rockies);
 			?>
 		</div>
-		<div class="nuggets-news">
+		<div class="news-section nuggets-news" id="nuggets">
 			<h1>Denver Nuggets News</h1>
 			<?php
 				newsTemplate($xml_nuggets);
 			?>
 		</div>
-		<div class="avs-news">
+		<div class="news-section avs-news" id="avs">
 			<h1>Colorado Avalanche News</h1>
 			<?php
 				newsTemplate($xml_avs);
 			?>
 		</div>
-		<div class="buffs-news">
+		<div class="news-section buffs-news" id="buffs">
 			<h1>CU Buffaloes News</h1>
 			<?php
 				newsTemplate($xml_buffs);
 			?>
 		</div>
-		<div class="rams-news">
+		<div class="news-section rams-news" id="rams">
 			<h1>CSU Rams News</h1>
 			<?php
 				newsTemplate($xml_rams);
@@ -148,37 +165,37 @@
 			(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
 		</aside>
-		<div class="falcons-news">
+		<div class="news-section falcons-news" id="falcons">
 			<h1>AF Falcons News</h1>
 			<?php
 				newsTemplate($xml_falcons);
 			?>
 		</div>
-		<div class="rapids-news">
+		<div class="news-section rapids-news" id="rapids">
 			<h1>Colorado Rapids News</h1>
 			<?php
 				newsTemplate($xml_rapids);
 			?>
 		</div>
-		<div class="college-news">
+		<div class="news-section college-news" id="college">
 			<h1>Colorado Collegiate News</h1>
 			<?php
 				newsTemplate($xml_collegiate);
 			?>
 		</div>
-		<div class="highschool-news">
+		<div class="news-section highschool-news" id="highschool">
 			<h1>Colorado High School News</h1>
 			<?php
 				newsTemplate($xml_highschool);
 			?>
 		</div>
-		<div class="general-news">
+		<div class="news-section general-news" id="misc">
 			<h1>Colorado Misc News</h1>
 			<?php
 				newsTemplate($xml_general);
 			?>
 		</div>
-		<div class="outdoors-news">
+		<div class="news-section outdoors-news" id="outdoors">
 			<h1>Colorado Outdoors News</h1>
 			<?php
 				newsTemplate($xml_outdoors);
@@ -217,7 +234,7 @@
 			(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
 		</aside>
-		<div class="links">
+		<div class="links" id="links">
 			<div class="links-left">
 				<h3>Professional Teams</h3>
 				<p><a href="http://www.denverbroncos.com/" target="_blank">Denver Broncos</a></p>
