@@ -40,6 +40,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="The latest in Colorado sports news, from the Denver Broncos, to Colorado high schools.">
+	<meta name="summary" content="Get the latest news stories covering Colorado sports. Follow professional teams like the Denver Broncos, Denver Nuggets, Colorado Rockies, Colorado Avalanche. Read the latest on Colorado collegiate teams like the CU Buffs, CSU Rams, and Air Force Falcons. Follow Colorado high school news, and even hunting, fishing, and hiking news in Colorado.">
 	<title>Colorado Sports Report</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css">
