@@ -16,7 +16,7 @@
 
 	$xml_falcons = simplexml_load_file('https://www.bing.com/news/search?q=air+force+falcons+sports+&go=Submit&qs=n&form=QBNT&pq=air+force+falcons+sports+&sc=2-25&sp=-1&sk=&format=RSS') or die("Error: Please try again later");
 
-	$xml_rapids = simplexml_load_file('https://www.bing.com/news/search?q=colorado+rapids&go=Submit&qs=n&form=QBNT&pq=colorado+rapids&sc=8-13&sp=-1&sk=&ghc=1&format=RSS') or die("Error: Please try again later");
+	$xml_rapids = simplexml_load_file('https://www.bing.com/news/search?q=colorado+rapids&go=Submit&qs=n&form=QBNT&pq=colorado+rapids+soccer&sc=8-13&sp=-1&sk=&ghc=1&format=RSS') or die("Error: Please try again later");
 
 	$xml_collegiate = simplexml_load_file('https://www.bing.com/news/search?q=college+sports+colorado&go=Submit&qs=n&form=QBNT&pq=college+sports+colorado&sc=0-21&sp=-1&sk=&format=RSS') or die("Error: Please try again later");
 
