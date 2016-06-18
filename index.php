@@ -346,7 +346,7 @@
 		</div>			
 	</main>
 	<footer>
-		<h2>&copy;2015 Colorado Sports Report | Powered By <a href="http://30andb.com" target="_blank">30andB.com</a></h2>
+		<h2>&copy;2015 Colorado Sports Report | Powered By <a href="http://snoopbobb.com" target="_blank">Snoopbobb</a></h2>
 	</footer>
 	<script src="js/main.js"></script>
 </body>
