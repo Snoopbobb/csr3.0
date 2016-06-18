@@ -253,11 +253,12 @@
 				<p><a href="http://www.coloradorapids.com/" target="_blank">Colorado Rapids</a></p>
 				<p><a href="http://www.milb.com/index.jsp?sid=t551" target="_blank">Colorado Springs Sky Sox</a></p>
 				<p><a href="http://www.milb.com/index.jsp?sid=t342" target="_blank">Albuquerque Isotopes (Rockies AAA)</a></p>
-				<p><a href="http://www.milb.com/index.jsp?sid=t538" target="_blank">New Britain Rock Cats (Rockies AA)</a></p>
+				<p><a href="http://www.milb.com/index.jsp?sid=t538" target="_blank">Hartford Yard Goats (Rockies AA)</a></p>
 				<p><a href="http://www.milb.com/index.jsp?sid=t515" target="_blank">Modesto Nuts (Rockies Adv A)</a></p>
 				<p><a href="http://www.milb.com/index.jsp?sid=t573" target="_blank">Asheville Tourists (Rockies A)</a></p>
 				<p><a href="http://www.milb.com/index.jsp?sid=t480" target="_blank">Boise Hawks (Rockies Short A)</a></p>
 				<p><a href="http://www.milb.com/index.jsp?sid=t4364" target="_blank">Grand Junction Rockies (Rockies Rookie)</a></p>
+				<p><a href="http://www.milb.com/index.jsp?sid=t629" target="_blank">Dominican Summer League Rockies (Rockies Foreign Rookie)</a></p>
 				<p><a href="http://www.coloradomammoth.com/" target="_blank">Colorado Mammoth</a></p>
 				<p><a href="http://www.denveroutlaws.com/" target="_blank">Denver Outlaws</a></p>
 				<p><a href="http://coloradoeagles.com/" target="_blank">Colorado Eagles</a></p>

@@ -114,84 +114,84 @@ main {
 	background-color: #FB4F14;
 	color: #002D62;
 }
-.broncos-news a {
+.broncos-news a, .broncos-news a:visited {
 	color: #002D62;
 }
 .rockies-news {
 	background-color: purple;
 	color: #C0C0C0;
 }
-.rockies-news a {
+.rockies-news a , .rockies-news a:visited {
 	color: #C0C0C0;
 }
 .nuggets-news {
 	background-color: #4B90CD;
 	color: #FCF800;
 }
-.nuggets-news a {
+.nuggets-news a , .nuggets-news a:visited {
 	color: #FCF800;
 }
 .avs-news {
 	background-color: #8B2942;
 	color: #A9B0B8;
 }
-.avs-news a {
+.avs-news a , .avs-news a:visited {
 	color: #A9B0B8;
 }
 .buffs-news {
 	background-color: gold;
 	color: black;
 }
-.buffs-news a {
+.buffs-news a, .buffs-news a:visited {
 	color: black;
 }
 .rams-news {
 	background-color: green;
 	color: gold;
 }
-.rams-news a {
+.rams-news a, .rams-news a:visited {
 	color: gold;
 }
 .falcons-news {
 	background-color: darkblue;
 	color: silver;
 }
-.falcons-news a {
+.falcons-news a, .falcons-news a:visited {
 	color: silver;
 }
 .rapids-news {
 	background-color: #91022D;
 	color: #85B7EA;
 }
-.rapids-news a {
+.rapids-news a , .rapids-news a:visited {
 	color: #85B7EA;
 }
 .college-news {
 	background-color: red;
 	color: blue;
 }
-.college-news a {
+.college-news a, .college-news a:visited {
 	color: blue;
 }
 .highschool-news {
 	background-color: #eaeaea;
 	color: red;
 }
-.highschool-news a {
+.highschool-news a, .highschool-news a:visited {
 	color: red;
 }
 .general-news {
 	background-color: darkblue;
 	color: darkgray;
 }
-.general-news a {
+.general-news a, .general-news a:visited {
 	color: darkgray;
 }
 .outdoors-news {
 	background-color: lightgreen;
 	color: darkgreen;
 }
-.outdoors-news a {
+.outdoors-news a, .outdoors-news a:visted {
 	color: darkgreen;
 }
 .links {
@@ -201,6 +201,15 @@ main {
 	float: left;
 	padding: 20px;
 }
+a {
+	color: darkblue;
+}
+a:visited {
+	color: darkblue;
+}
+a:hover {
+	color: white;
+}
 footer {
 	background-color: black;
 	color: white;
@@ -209,12 +218,6 @@ footer {
 	margin: 0 auto;
 	clear: left;
 }
-footer a {
-	color: white;
-}
-a:hover {
-	color: white;
-}
-a:visited {
+footer a, footer a:visited {
 	color: white;
 }
