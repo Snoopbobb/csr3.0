@@ -1,4 +1,4 @@
-$(function(){
+$( document ).ready(function() {
 
 	// Smooth scroll to inner page links
 	$('a[href*=#]:not([href=#])').click(function() {
