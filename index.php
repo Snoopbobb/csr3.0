@@ -346,7 +346,7 @@
 		</div>			
 	</main>
 	<footer>
-		<h2>&copy;2015 Colorado Sports Report | Powered By <a href="http://snoopbobb.com" target="_blank">Snoopbobb</a></h2>
+		<h2>&copy;<?php echo date('Y'); ?> Colorado Sports Report | Powered By <a href="http://snoopbobb.com" target="_blank">Snoopbobb</a></h2>
 	</footer>
 	<script src="js/main.js"></script>
 </body>
