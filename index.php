@@ -120,7 +120,7 @@
 				newsTemplate($xml_rams);
 			?>
 		</div>
-		<div class="pics">
+		<!-- <div class="pics">
 			<div style='position: relative; padding-bottom: 101%; height: 0; overflow: hidden;'>
 				<iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=100&size=big&tags=denverbroncos&thumbnails=0&transition=0&layoutType=responsive&sort=3' 
 						scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' >
@@ -161,7 +161,7 @@
 						scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' >
 				</iframe>
 			</div>
-		</div>
+		</div> -->
 		<aside>
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- CSR responsive -->
@@ -210,7 +210,7 @@
 				newsTemplate($xml_outdoors);
 			?>
 		</div>
-		<div class="pics">
+		<!-- <div class="pics">
 			<div style='position: relative; padding-bottom: 101%; height: 0; overflow: hidden;'>
 				<iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=100&size=big&tags=hikecolorado&thumbnails=0&transition=0&layoutType=responsive&sort=3' 
 						scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' >
@@ -230,7 +230,7 @@
 						scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' >
 				</iframe>
 			</div>
-		</div>
+		</div> -->
 		<aside>
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- CSR responsive -->
